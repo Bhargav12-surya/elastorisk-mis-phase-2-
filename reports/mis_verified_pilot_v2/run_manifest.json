@@ -1,0 +1,628 @@
+{
+  "version": "1.0.0",
+  "data_root": "D:\\MIS\\data",
+  "cache_root": "D:\\MIS\\artifacts\\mis_verified_pilot_cache",
+  "seed": 42,
+  "domains": [
+    "phantom",
+    "simulation"
+  ],
+  "records": [
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\42cd95a926bf0b0049d3721b4582365649483ab5edcfca737a9a3358651cbd7b.npy",
+      "sha256": "42cd95a926bf0b0049d3721b4582365649483ab5edcfca737a9a3358651cbd7b",
+      "shape": [
+        2,
+        1920,
+        384
+      ],
+      "pair_mean": -7.27677652908656,
+      "pair_rms_centered": 393.0222509657829,
+      "cache_signature": {
+        "size": 5898368,
+        "mtime_ns": 1793318724277323500
+      },
+      "id": "phantom_42cd95a926bf0b0049d3",
+      "domain": "phantom",
+      "source": "phantom/Data_1.mat",
+      "source_signature": {
+        "size": 23593312,
+        "mtime_ns": 1618205572000000000
+      },
+      "pair_selection": null,
+      "lineage_groups": [
+        "phantom:file:phantom/Data_1.mat"
+      ],
+      "group": "phantom:file:phantom/Data_1.mat",
+      "aliases": [
+        {
+          "source": "phantom/Data_1.mat",
+          "source_id": "phantom/Data_1.mat:None:None",
+          "domain": "phantom",
+          "lineage_groups": [
+            "phantom:file:phantom/Data_1.mat"
+          ],
+          "pair_selection": null
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\86e880b0b0596b44ad37ce7da9604cca1ebec9504342e51ed84a94c0f82436d1.npy",
+      "sha256": "86e880b0b0596b44ad37ce7da9604cca1ebec9504342e51ed84a94c0f82436d1",
+      "shape": [
+        2,
+        1920,
+        384
+      ],
+      "pair_mean": -7.108843953543935,
+      "pair_rms_centered": 395.0523560964299,
+      "cache_signature": {
+        "size": 5898368,
+        "mtime_ns": 1793318724322834500
+      },
+      "id": "phantom_86e880b0b0596b44ad37",
+      "domain": "phantom",
+      "source": "phantom/Data_10.mat",
+      "source_signature": {
+        "size": 23593312,
+        "mtime_ns": 1618205578000000000
+      },
+      "pair_selection": null,
+      "lineage_groups": [
+        "phantom:file:phantom/Data_10.mat"
+      ],
+      "group": "phantom:file:phantom/Data_10.mat",
+      "aliases": [
+        {
+          "source": "phantom/Data_10.mat",
+          "source_id": "phantom/Data_10.mat:None:None",
+          "domain": "phantom",
+          "lineage_groups": [
+            "phantom:file:phantom/Data_10.mat"
+          ],
+          "pair_selection": null
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\80ceef0aca641bbf576062aae53d16f11ed0e71653e47b4d2cf5e707c945ec8d.npy",
+      "sha256": "80ceef0aca641bbf576062aae53d16f11ed0e71653e47b4d2cf5e707c945ec8d",
+      "shape": [
+        2,
+        1920,
+        384
+      ],
+      "pair_mean": -7.179407969076682,
+      "pair_rms_centered": 393.44900685619507,
+      "cache_signature": {
+        "size": 5898368,
+        "mtime_ns": 1793318724360832900
+      },
+      "id": "phantom_80ceef0aca641bbf5760",
+      "domain": "phantom",
+      "source": "phantom/Data_100.mat",
+      "source_signature": {
+        "size": 23593312,
+        "mtime_ns": 1618205644000000000
+      },
+      "pair_selection": null,
+      "lineage_groups": [
+        "phantom:file:phantom/Data_100.mat"
+      ],
+      "group": "phantom:file:phantom/Data_100.mat",
+      "aliases": [
+        {
+          "source": "phantom/Data_100.mat",
+          "source_id": "phantom/Data_100.mat:None:None",
+          "domain": "phantom",
+          "lineage_groups": [
+            "phantom:file:phantom/Data_100.mat"
+          ],
+          "pair_selection": null
+        }
+      ],
+      "split": "validation"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\d51cfd2dab55d99033415c23fefe8df934017cad1b1c28db913ebe3331c49005.npy",
+      "sha256": "d51cfd2dab55d99033415c23fefe8df934017cad1b1c28db913ebe3331c49005",
+      "shape": [
+        2,
+        1920,
+        384
+      ],
+      "pair_mean": -7.216609029405623,
+      "pair_rms_centered": 408.01073158278194,
+      "cache_signature": {
+        "size": 5898368,
+        "mtime_ns": 1793318724412075600
+      },
+      "id": "phantom_d51cfd2dab55d9903341",
+      "domain": "phantom",
+      "source": "phantom/Data_1000.mat",
+      "source_signature": {
+        "size": 23593312,
+        "mtime_ns": 1618206390000000000
+      },
+      "pair_selection": null,
+      "lineage_groups": [
+        "phantom:file:phantom/Data_1000.mat"
+      ],
+      "group": "phantom:file:phantom/Data_1000.mat",
+      "aliases": [
+        {
+          "source": "phantom/Data_1000.mat",
+          "source_id": "phantom/Data_1000.mat:None:None",
+          "domain": "phantom",
+          "lineage_groups": [
+            "phantom:file:phantom/Data_1000.mat"
+          ],
+          "pair_selection": null
+        }
+      ],
+      "split": "train"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\5a613bca00be908a0d67d5b0a3ac127ed855e8c8a63e8daa986e05429948458b.npy",
+      "sha256": "5a613bca00be908a0d67d5b0a3ac127ed855e8c8a63e8daa986e05429948458b",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": -1.0785564883470225e-06,
+      "pair_rms_centered": 0.17476305730125874,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318725463244600
+      },
+      "id": "simulation_5a613bca00be908a0d67",
+      "domain": "simulation",
+      "source": "simulation/model2_5m_all.mat",
+      "source_signature": {
+        "size": 195196997,
+        "mtime_ns": 1777657014000000000
+      },
+      "pair_selection": {
+        "realization": 9,
+        "frames": [
+          8,
+          9
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model2"
+      ],
+      "group": "simulation:model2",
+      "aliases": [
+        {
+          "source": "simulation/model2_5m_all.mat",
+          "source_id": "simulation/model2_5m_all.mat:9:8",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model2"
+          ],
+          "pair_selection": {
+            "realization": 9,
+            "frames": [
+              8,
+              9
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\a349413ebc20b1a1b445c1553b2ae21113ccb6164659161b13cf7ccb81c538b3.npy",
+      "sha256": "a349413ebc20b1a1b445c1553b2ae21113ccb6164659161b13cf7ccb81c538b3",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": 1.3490995461231113e-05,
+      "pair_rms_centered": 0.1461435312787008,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318725432127700
+      },
+      "id": "simulation_a349413ebc20b1a1b445",
+      "domain": "simulation",
+      "source": "simulation/model2_5m_all.mat",
+      "source_signature": {
+        "size": 195196997,
+        "mtime_ns": 1777657014000000000
+      },
+      "pair_selection": {
+        "realization": 0,
+        "frames": [
+          0,
+          1
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model2"
+      ],
+      "group": "simulation:model2",
+      "aliases": [
+        {
+          "source": "simulation/model2_5m_all.mat",
+          "source_id": "simulation/model2_5m_all.mat:0:0",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model2"
+          ],
+          "pair_selection": {
+            "realization": 0,
+            "frames": [
+              0,
+              1
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\2513b0df3102b66a9879b0bfd6d4850a07b591311f9a6506b46f88b2328d29c9.npy",
+      "sha256": "2513b0df3102b66a9879b0bfd6d4850a07b591311f9a6506b46f88b2328d29c9",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": 1.0851305873192261e-05,
+      "pair_rms_centered": 0.158742432134611,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318726466991300
+      },
+      "id": "simulation_2513b0df3102b66a9879",
+      "domain": "simulation",
+      "source": "simulation/model3_5m_all.mat",
+      "source_signature": {
+        "size": 195154677,
+        "mtime_ns": 1777657016000000000
+      },
+      "pair_selection": {
+        "realization": 0,
+        "frames": [
+          0,
+          1
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model3"
+      ],
+      "group": "simulation:model3",
+      "aliases": [
+        {
+          "source": "simulation/model3_5m_all.mat",
+          "source_id": "simulation/model3_5m_all.mat:0:0",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model3"
+          ],
+          "pair_selection": {
+            "realization": 0,
+            "frames": [
+              0,
+              1
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\c1ca28f51df769bd30b406e7375879fc8317b5bad4c6654c88f8d7602b09a63a.npy",
+      "sha256": "c1ca28f51df769bd30b406e7375879fc8317b5bad4c6654c88f8d7602b09a63a",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": -2.1598614389169788e-06,
+      "pair_rms_centered": 0.18804490717171116,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318726497438300
+      },
+      "id": "simulation_c1ca28f51df769bd30b4",
+      "domain": "simulation",
+      "source": "simulation/model3_5m_all.mat",
+      "source_signature": {
+        "size": 195154677,
+        "mtime_ns": 1777657016000000000
+      },
+      "pair_selection": {
+        "realization": 9,
+        "frames": [
+          8,
+          9
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model3"
+      ],
+      "group": "simulation:model3",
+      "aliases": [
+        {
+          "source": "simulation/model3_5m_all.mat",
+          "source_id": "simulation/model3_5m_all.mat:9:8",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model3"
+          ],
+          "pair_selection": {
+            "realization": 9,
+            "frames": [
+              8,
+              9
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\0bf5c3a2edfa24724ab0814008e78683b873d3c000ef15ad8742f489c11986ad.npy",
+      "sha256": "0bf5c3a2edfa24724ab0814008e78683b873d3c000ef15ad8742f489c11986ad",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": -2.1187697637345746e-06,
+      "pair_rms_centered": 0.1893679732689049,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318727517768500
+      },
+      "id": "simulation_0bf5c3a2edfa24724ab0",
+      "domain": "simulation",
+      "source": "simulation/model4_5m_all.mat",
+      "source_signature": {
+        "size": 195141283,
+        "mtime_ns": 1777657016000000000
+      },
+      "pair_selection": {
+        "realization": 9,
+        "frames": [
+          8,
+          9
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model4"
+      ],
+      "group": "simulation:model4",
+      "aliases": [
+        {
+          "source": "simulation/model4_5m_all.mat",
+          "source_id": "simulation/model4_5m_all.mat:9:8",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model4"
+          ],
+          "pair_selection": {
+            "realization": 9,
+            "frames": [
+              8,
+              9
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "validation"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\de6f87af72c7f0e8554a43e8b1035699e7035223e18031a7b44d90fd56c8a550.npy",
+      "sha256": "de6f87af72c7f0e8554a43e8b1035699e7035223e18031a7b44d90fd56c8a550",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": 9.629640933661043e-06,
+      "pair_rms_centered": 0.1584925054879597,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318727489256400
+      },
+      "id": "simulation_de6f87af72c7f0e8554a",
+      "domain": "simulation",
+      "source": "simulation/model4_5m_all.mat",
+      "source_signature": {
+        "size": 195141283,
+        "mtime_ns": 1777657016000000000
+      },
+      "pair_selection": {
+        "realization": 0,
+        "frames": [
+          0,
+          1
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model4"
+      ],
+      "group": "simulation:model4",
+      "aliases": [
+        {
+          "source": "simulation/model4_5m_all.mat",
+          "source_id": "simulation/model4_5m_all.mat:0:0",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model4"
+          ],
+          "pair_selection": {
+            "realization": 0,
+            "frames": [
+              0,
+              1
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "validation"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\27c30773b31e3d5e59c41033f955cdf0c3f81939699054c37451c9594b787720.npy",
+      "sha256": "27c30773b31e3d5e59c41033f955cdf0c3f81939699054c37451c9594b787720",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": 1.1412895399563317e-05,
+      "pair_rms_centered": 0.15879063162084148,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318728511080000
+      },
+      "id": "simulation_27c30773b31e3d5e59c4",
+      "domain": "simulation",
+      "source": "simulation/model5_5m_all.mat",
+      "source_signature": {
+        "size": 182813734,
+        "mtime_ns": 1777657018000000000
+      },
+      "pair_selection": {
+        "realization": 0,
+        "frames": [
+          0,
+          1
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model5"
+      ],
+      "group": "simulation:model5",
+      "aliases": [
+        {
+          "source": "simulation/model5_5m_all.mat",
+          "source_id": "simulation/model5_5m_all.mat:0:0",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model5"
+          ],
+          "pair_selection": {
+            "realization": 0,
+            "frames": [
+              0,
+              1
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "train"
+    },
+    {
+      "path": "D:\\MIS\\artifacts\\mis_verified_pilot_cache\\pairs\\44cb0ac7e8bd1354a1128b34ffd165fb32509169056de8602456639ab5df29c8.npy",
+      "sha256": "44cb0ac7e8bd1354a1128b34ffd165fb32509169056de8602456639ab5df29c8",
+      "shape": [
+        2,
+        2048,
+        256
+      ],
+      "pair_mean": -2.136338929302695e-06,
+      "pair_rms_centered": 0.1845797282831917,
+      "cache_signature": {
+        "size": 4194432,
+        "mtime_ns": 1793318728544392700
+      },
+      "id": "simulation_44cb0ac7e8bd1354a112",
+      "domain": "simulation",
+      "source": "simulation/model5_5m_all.mat",
+      "source_signature": {
+        "size": 182813734,
+        "mtime_ns": 1777657018000000000
+      },
+      "pair_selection": {
+        "realization": 9,
+        "frames": [
+          8,
+          9
+        ],
+        "frame_axis": 1
+      },
+      "lineage_groups": [
+        "simulation:model5"
+      ],
+      "group": "simulation:model5",
+      "aliases": [
+        {
+          "source": "simulation/model5_5m_all.mat",
+          "source_id": "simulation/model5_5m_all.mat:9:8",
+          "domain": "simulation",
+          "lineage_groups": [
+            "simulation:model5"
+          ],
+          "pair_selection": {
+            "realization": 9,
+            "frames": [
+              8,
+              9
+            ],
+            "frame_axis": 1
+          }
+        }
+      ],
+      "split": "train"
+    }
+  ],
+  "notes": [
+    "RF motion learning is self-supervised; neither pathology grades nor true displacement targets are supplied.",
+    "Initial flows and simulation axial/lateral companion files are excluded from training and accuracy claims.",
+    "data/test is inventoried but excluded because its sequence/provenance contract is unknown.",
+    "Exact float32 pair duplicates are consolidated before group splitting. Near-duplicates require acquisition IDs.",
+    "60/15/10/15 are target group fractions; rounding reserves at least one group per role in each domain.",
+    "PROVISIONAL PHANTOM SPLIT: file identities are used because acquisition IDs are absent. Correlated frames may remain across partitions; results do not establish acquisition-level generalization.",
+    "UNVERIFIED SIMULATION AXIS ASSUMPTION: RF leading axis 1 is ordered deformation; axis 0 is realization. Adjacent selected frames are paired. All realizations/frequencies of modelN share one geometry group."
+  ],
+  "axes_assumption": {
+    "spatial": "[z,x]",
+    "simulation_frame_axis": 1,
+    "simulation_verified": false
+  },
+  "group_map": null,
+  "source_files": 8,
+  "pairs_before_deduplication": 12,
+  "unique_pairs": 12,
+  "duplicates_consolidated": 0,
+  "float32_payload_bytes": 57147392,
+  "audit_mat_files": 2541,
+  "pathology_grade_available": false,
+  "split_counts": {
+    "phantom": {
+      "test": 1,
+      "calibration": 1,
+      "validation": 1,
+      "train": 1
+    },
+    "simulation": {
+      "calibration": 2,
+      "test": 2,
+      "validation": 2,
+      "train": 2
+    }
+  }
+}

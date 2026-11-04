@@ -1,0 +1,1 @@
+HELP='Use Tab/Shift+Tab to navigate. Enter activates buttons. Ctrl+Q exits. Data and checkpoint fields accept local paths. Demo outputs are synthetic. View detailed PNG/HTML reports outside the terminal. Clinical grades require pathology-linked validation.'

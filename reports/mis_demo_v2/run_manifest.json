@@ -1,0 +1,441 @@
+{
+  "version": "1.1.0",
+  "records": [
+    {
+      "id": "demo_000",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_000.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_000",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.07847746741641792,
+        -1.19350899487918
+      ],
+      "sha256": "9ba5f9b2bd72a7c2fd18476851a3b1e7e8f0b85f4da23cfd9e3511fee23288b0"
+    },
+    {
+      "id": "demo_001",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_001.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_001",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.4228967640741452,
+        -0.7662995667929113
+      ],
+      "sha256": "16619a0c2b89d2cb812f077d1f3de59f1e278129f545a14eb27d5a64954b548c"
+    },
+    {
+      "id": "demo_002",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_002.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_002",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.8360177922934042,
+        0.17308570298213466
+      ],
+      "sha256": "e80f1ca3e22110f17ccfe0110fa922f06ac4ac912971344072bce24f0df0799d"
+    },
+    {
+      "id": "demo_003",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_003.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_003",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.2507140898968343,
+        0.38238966661580776
+      ],
+      "sha256": "0434040f0c24aebc2076d54b62c3b3ca4464821d6e2745c36bd380d501ce6fb0"
+    },
+    {
+      "id": "demo_004",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_004.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_004",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.012945825070007855,
+        2.3393297915458806
+      ],
+      "sha256": "f6de09326cb2e38bba3285df9f6a4e6852f79c53f21a720b105ef6e72fea7268"
+    },
+    {
+      "id": "demo_005",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_005.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_005",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.759746986895947,
+        0.21010575931532038
+      ],
+      "sha256": "6a54da0c4db677e606800828f5080684ec612b72fd6df075220bf35c9f788725"
+    },
+    {
+      "id": "demo_006",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_006.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_006",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.4217338315991963,
+        2.4059040414450656
+      ],
+      "sha256": "bd07c83c8483667fa65c675744f896e1560e5747811550a1e41b9e920f6ed105"
+    },
+    {
+      "id": "demo_007",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_007.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_007",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.2716374799427572,
+        0.7461185363351239
+      ],
+      "sha256": "eddfc6b010fc4e9db77c36a46a8839fa061f726e4ba5c4f7afacea1d6310af7a"
+    },
+    {
+      "id": "demo_008",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_008.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_008",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.7180763194416595,
+        1.6758912892818225
+      ],
+      "sha256": "ec50d2c3150cabf8a0359c9916f8be1af1e56db4236efc86f8ca6cd4585c8bd8"
+    },
+    {
+      "id": "demo_009",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_009.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_009",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.752487613786383,
+        -0.8023839004807298
+      ],
+      "sha256": "dd0ab28f9da1423a1430d12e9d07accec48c443edf2024903b42b03767a2a5ec"
+    },
+    {
+      "id": "demo_010",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_010.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_010",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.23713502129361452,
+        -1.2397724495448925
+      ],
+      "sha256": "6c1e0d2dc60cb49c9d1a1d938f62b07f93aa3ed26aaa51eee7a4f6295fb5e3a9"
+    },
+    {
+      "id": "demo_011",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_011.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_011",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.5363784462135965,
+        -0.8736650876216867
+      ],
+      "sha256": "a7281c8a8b18c1be4706f3add6e3fb20f042047e92e4ab2b53fb68da631a0b91"
+    },
+    {
+      "id": "demo_012",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_012.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_012",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.9914619922538457,
+        -0.7926122598006486
+      ],
+      "sha256": "fe2ec7c406362615544bb7df10de0ff25caf5a2e3f12b2cabb5116b39d5a61bc"
+    },
+    {
+      "id": "demo_013",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_013.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_013",
+      "split": "train",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.3702559639378067,
+        -0.05940798654626045
+      ],
+      "sha256": "0259a70a46b7ad43de340a0097820a45439ad3347a36b8ad962a89eb6880e30c"
+    },
+    {
+      "id": "demo_014",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_014.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_014",
+      "split": "validation",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.14132859205837645,
+        -0.47522573049513817
+      ],
+      "sha256": "baace874756adec8237be1088bd9ec1e0bc4472a16cc1e0c57dc53ba284ca44b"
+    },
+    {
+      "id": "demo_015",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_015.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_015",
+      "split": "validation",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.17572450653979055,
+        -1.4132339584527076
+      ],
+      "sha256": "60122a59c5e94a21464d33c1167f8953cf4b706df53b9ef6058332af262be433"
+    },
+    {
+      "id": "demo_016",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_016.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_016",
+      "split": "validation",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.905416525375818,
+        -1.86398116263427
+      ],
+      "sha256": "3973d653b8b31050215978a29c5dd3bf98159eb33b1431e0ea2574725f60b7a6"
+    },
+    {
+      "id": "demo_017",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_017.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_017",
+      "split": "validation",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.9056130912825917,
+        -2.491469518328184
+      ],
+      "sha256": "65c800cfb3d8b9ee21f82ac33b40580e8f580662eb94db1063f62bc6bb17cc92"
+    },
+    {
+      "id": "demo_018",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_018.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_018",
+      "split": "calibration",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.5409212917688984,
+        -1.8249111791506762
+      ],
+      "sha256": "6646294d2f119f5d08e95624c23f03da96b133f914fa9bd5efa43218437653fe"
+    },
+    {
+      "id": "demo_019",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_019.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_019",
+      "split": "calibration",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.15901497700282707,
+        0.8333740910511738
+      ],
+      "sha256": "0e1fc6de6c79ddc92a821cfecfe543520928eeb44a0fc374a899840b06749c27"
+    },
+    {
+      "id": "demo_020",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_020.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_020",
+      "split": "calibration",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.22796783736032977,
+        -0.6181029460798833
+      ],
+      "sha256": "51eccf1b4b62e2eacd75e339bcc124b05ec5248478d8cbe71c8efe36afa7f723"
+    },
+    {
+      "id": "demo_021",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_021.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_021",
+      "split": "test",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.3497109207032634,
+        1.4802305486430232
+      ],
+      "sha256": "0d0829b206ca0d448a3d5e014e7f541e841bda8db7b92ef08d17fa13705b10ad"
+    },
+    {
+      "id": "demo_022",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_022.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_022",
+      "split": "test",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        -0.9540270932225035,
+        2.0832269924755806
+      ],
+      "sha256": "e314616661d27260d964c26b70f92448ebe9cb8918ab20cd452639d23dbf85f5"
+    },
+    {
+      "id": "demo_023",
+      "path": "D:\\MIS\\artifacts\\mis_demo_v2_cache\\demo_023.npy",
+      "domain": "synthetic_fixture",
+      "group": "fixture_023",
+      "split": "test",
+      "source": "analytic translation fixture",
+      "shape": [
+        2,
+        80,
+        64
+      ],
+      "analytic_truth_flow_pixels": [
+        0.7480059240870967,
+        -0.41546806914551837
+      ],
+      "sha256": "3d916febb0417218c1a0022fe285302b7870abe421f4ed49623d48beb6aad57b"
+    }
+  ],
+  "notes": [
+    "Synthetic software demonstration only; no clinical or acoustic validation."
+  ],
+  "data_origin": "synthetic_fixture"
+}

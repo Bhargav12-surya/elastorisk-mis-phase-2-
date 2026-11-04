@@ -1,0 +1,62 @@
+# Credentials and local application configuration
+.env
+.env.*
+!.env.example
+.vscode/
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+
+# Python environments and generated caches
+.venv/
+.venv-mis/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Raw research data and prepared caches stay local. Keep their documentation.
+/data/*
+!/data/README.md
+/artifacts/*
+!/artifacts/README.md
+
+# Keep the completed experiment and the verification evidence linked by README.
+# All other local development, cleanup, and notebook-run outputs stay local.
+/reports/*
+!/reports/mis_full_training/
+!/reports/final_inference/
+!/reports/mis_self_test_v3/
+!/reports/mis_audit/
+!/reports/mis_cache_recovery/
+!/reports/mis_demo_v2/
+!/reports/mis_verified_pilot_v2/
+!/reports/mis_tiled_smoke_v2/
+!/reports/mis_gpu_recovery_smoke/
+
+# Model checkpoints, numerical array payloads, and convenience archives
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.npy
+*.npz
+*.mat
+*.h5
+*.hdf5
+*.zip
+
+# Historical snapshots and the duplicated ChatGPT teaching package
+/ElastoGrade_Checkpoint_1/
+/GPT_HANDOFF/
+
+# Helpers and reviews tied to this laptop
+/link_pytorch.ps1
+/run_python.bat
+/setup_cuda_env.ps1
+/test_gpu.py
+/cleanup_mis.ps1
+/CLEANUP_REVIEW.md

@@ -1,0 +1,18 @@
+{
+  "input": "D:\\MIS\\artifacts\\mis_demo_cache\\demo_021.npy",
+  "checkpoint": "D:\\MIS\\reports\\mis_verified_pilot_v2\\best.pt",
+  "shape": [
+    2,
+    80,
+    64
+  ],
+  "patch": [
+    64,
+    48
+  ],
+  "overlap": 24,
+  "normalization": "Shared RF normalization per tile, matching training",
+  "tiles": 4,
+  "pathology_grade_available": false,
+  "warning": "Tiling can introduce motion discontinuities at tile boundaries; validate on held-out data."
+}

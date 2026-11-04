@@ -1,0 +1,48 @@
+{
+  "policy": "quarantine",
+  "selected_source_files": 2337,
+  "quarantined_source_count": 2,
+  "sources": [
+    {
+      "source": "phantom/Data_208.mat",
+      "domain": "phantom",
+      "source_signature": {
+        "size": 23593312,
+        "mtime_ns": 1618208924000000000
+      },
+      "message": "Original RF values exceed float32 range; source may contain corrupt scanlines.",
+      "action": "source_quarantined",
+      "reason": "float32_out_of_range",
+      "original_dtype": "float64",
+      "original_shape": [
+        2,
+        1920,
+        384
+      ],
+      "minimum": -6.814794741764703e+303,
+      "maximum": 1.238836196416582e+307,
+      "unsafe_samples": 1134,
+      "unsafe_fraction": 0.00076904296875,
+      "affected_lateral_columns": [
+        372,
+        373
+      ],
+      "absolute_median": 215.14529418945312,
+      "absolute_q999": 2155.470500000054
+    },
+    {
+      "source": "simulation/model11_5m_all.mat",
+      "domain": "simulation",
+      "source_signature": {
+        "size": 195186766,
+        "mtime_ns": 1777657028000000000
+      },
+      "message": "Cannot read MAT source: Error -3 while decompressing data: incorrect data check",
+      "action": "source_quarantined",
+      "reason": "unreadable_mat_source",
+      "reader_error": "zlib.error"
+    }
+  ],
+  "raw_file_action": "preserved",
+  "interpretation": "Excluded corrupt/unrepresentable source files; no RF values were clipped, interpolated or replaced."
+}

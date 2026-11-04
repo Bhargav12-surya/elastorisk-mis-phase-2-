@@ -1,0 +1,27 @@
+accumulation: 1
+data_mode: demo
+device: cpu
+epochs: 2
+loss:
+  env: 0.2
+  fb: 0.1
+  jacobian: 0.01
+  rf: 1.0
+  smooth: 0.02
+  sup: 0.0
+lr: 0.001
+model:
+  attention: false
+  confidence: false
+  inputs: rf
+  name: pyramid
+  radius: 1
+  width: 8
+output: reports/training
+regime: self_supervised
+samples: 12
+seed: 42
+shape:
+- 48
+- 32
+threads: 2

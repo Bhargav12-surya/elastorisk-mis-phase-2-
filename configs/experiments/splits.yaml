@@ -1,0 +1,4 @@
+group_key: geometry_id
+manifest: data/processed/impact-simulation/manifest.json
+output: artifacts/manifest.json
+seed: 42

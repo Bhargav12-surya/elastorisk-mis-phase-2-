@@ -1,0 +1,828 @@
+{
+  "version": "1.1.0",
+  "endpoint": "feature-derived operational proxy failure",
+  "endpoint_warning": "Risk metrics measure imitation of a declared quality rule; they do not establish displacement accuracy or cancer grading.",
+  "crop_protocol": "one fixed center crop per selected RF pair",
+  "patch": [
+    64,
+    48
+  ],
+  "selected_pairs": 24,
+  "available_pairs": 24,
+  "thresholds": {
+    "residual": 0.45,
+    "cycle_pixels": 1.0,
+    "fold_fraction": 0.01,
+    "invalid_fraction": 0.25
+  },
+  "calibrator": {
+    "status": "skipped: fewer than 8 rows or one outcome class",
+    "coef": null
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "cuda_build": null,
+    "cuda_available": false,
+    "gpu": null,
+    "script_sha256": "85b43234c37197cae56379bb1ce691f251aa49efac2cd1828d22b281d653c8c3"
+  },
+  "elapsed_seconds": 1.3038300999905914,
+  "manifest_notes": [
+    "Synthetic software demonstration only; no clinical or acoustic validation."
+  ],
+  "metrics": {
+    "train": {
+      "n": 14,
+      "prevalence": 0.7857142857142857,
+      "brier": 0.07657270661424952,
+      "accuracy_at_0.5": 0.8571428571428571,
+      "confusion_matrix": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "roc_auc": 0.9393939393939394,
+      "average_precision": 0.9841597796143251,
+      "ece_10_bins": 0.09679211231866588
+    },
+    "validation": {
+      "n": 4,
+      "prevalence": 1.0,
+      "brier": 0.10929077496517058,
+      "accuracy_at_0.5": 0.75,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.2571369781752284
+    },
+    "calibration": {
+      "n": 3,
+      "prevalence": 0.6666666666666666,
+      "brier": 0.010943131774070303,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "ece_10_bins": 0.0901966420177836
+    },
+    "test": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.008004582099991156,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.06520164688723758
+    }
+  },
+  "domain_metrics": {
+    "synthetic_fixture": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.008004582099991156,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.06520164688723758
+    }
+  },
+  "test_grouped_statistics": {
+    "reconstruction loss": {
+      "mean": 0.7721711993217468,
+      "ci95": [
+        0.636555552482605,
+        0.9595521092414856
+      ],
+      "groups": 3,
+      "weighting": "equal group"
+    },
+    "zero_residual": {
+      "mean": 0.8139249086380005,
+      "ci95": [
+        0.7128943204879761,
+        0.9974429607391357
+      ],
+      "groups": 3,
+      "weighting": "equal group"
+    },
+    "phase_residual": {
+      "mean": 0.32295944541692734,
+      "ci95": [
+        0.07778695970773697,
+        0.5813788771629333
+      ],
+      "groups": 3,
+      "weighting": "equal group"
+    },
+    "proxy_failure": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "groups": 3,
+      "weighting": "equal group"
+    }
+  },
+  "pathology_grade_available": false,
+  "simulation_displacement_labels_used": false,
+  "normalization_version": 2,
+  "checkpoint_training_version": "1.1.0",
+  "checkpoint_path": "D:\\MIS\\reports\\mis_demo_v2\\best.pt",
+  "example_protocol": "Held-out domains and acquisition groups selected in round-robin order.",
+  "robustness_study": {
+    "status": "completed",
+    "rows": [
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "noise_rms",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.01118030000361614,
+        "reconstruction loss": 0.636555552482605,
+        "cycle error": 0.19083355367183685,
+        "strain dispersion": 0.0030254432931542397,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12202146649360657
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "noise_rms",
+        "strength": 0.05,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.0006536340224556625,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.011134700005641207,
+        "reconstruction loss": 0.6367330551147461,
+        "cycle error": 0.19117560982704163,
+        "strain dispersion": 0.003054065629839897,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12197907269001007
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "noise_rms",
+        "strength": 0.15,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.0019736820831894875,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.01106330001493916,
+        "reconstruction loss": 0.6396673917770386,
+        "cycle error": 0.19117023050785065,
+        "strain dispersion": 0.003090672194957733,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03190104166666663,
+        "flow magnitude": 0.12187758833169937
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "noise_rms",
+        "strength": 0.3,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.003925086464732885,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.011102999997092411,
+        "reconstruction loss": 0.649965763092041,
+        "cycle error": 0.1918753683567047,
+        "strain dispersion": 0.0030946130864322186,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03255208333333337,
+        "flow magnitude": 0.12147943675518036
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_gain",
+        "strength": 0.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.003729616291821003,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.012222599994856864,
+        "reconstruction loss": 0.634935200214386,
+        "cycle error": 0.19714325666427612,
+        "strain dispersion": 0.002951695118099451,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03287760416666663,
+        "flow magnitude": 0.12449084222316742
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_gain",
+        "strength": 1.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.01118030000361614,
+        "reconstruction loss": 0.636555552482605,
+        "cycle error": 0.19083355367183685,
+        "strain dispersion": 0.0030254432931542397,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12202146649360657
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_gain",
+        "strength": 1.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.001226268126629293,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.00945270000374876,
+        "reconstruction loss": 0.6370882987976074,
+        "cycle error": 0.18923497200012207,
+        "strain dispersion": 0.003051795531064272,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12081493437290192
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_stripe_fraction",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.01118030000361614,
+        "reconstruction loss": 0.636555552482605,
+        "cycle error": 0.19083355367183685,
+        "strain dispersion": 0.0030254432931542397,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12202146649360657
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_stripe_fraction",
+        "strength": 0.1,
+        "proxy_failure": 1,
+        "risk_raw": 0.8481575021307394,
+        "risk_calibrated": 0.8481575021307394,
+        "flow_change_pixels": 0.008170079439878464,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010097999998833984,
+        "reconstruction loss": 0.6778112053871155,
+        "cycle error": 0.19219399988651276,
+        "strain dispersion": 0.0030697379261255264,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0322265625,
+        "flow magnitude": 0.12063200771808624
+      },
+      {
+        "id": "demo_021",
+        "domain": "synthetic_fixture",
+        "group": "fixture_021",
+        "condition": "post_stripe_fraction",
+        "strength": 0.25,
+        "proxy_failure": 1,
+        "risk_raw": 0.937186399889279,
+        "risk_calibrated": 0.937186399889279,
+        "flow_change_pixels": 0.015265855006873608,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.01072390002082102,
+        "reconstruction loss": 0.7462562918663025,
+        "cycle error": 0.1884692907333374,
+        "strain dispersion": 0.002925441600382328,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03255208333333337,
+        "flow magnitude": 0.11873477697372437
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "noise_rms",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010552399995503947,
+        "reconstruction loss": 0.9595521092414856,
+        "cycle error": 0.2207641899585724,
+        "strain dispersion": 0.0023795715533196926,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.033203125,
+        "flow magnitude": 0.13478228449821472
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "noise_rms",
+        "strength": 0.05,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0006922611501067877,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.011955699999816716,
+        "reconstruction loss": 0.9604215025901794,
+        "cycle error": 0.21974146366119385,
+        "strain dispersion": 0.0023641379084438086,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03352864583333337,
+        "flow magnitude": 0.13465729355812073
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "noise_rms",
+        "strength": 0.15,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.002131704008206725,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.009984900010749698,
+        "reconstruction loss": 0.9624214768409729,
+        "cycle error": 0.21901288628578186,
+        "strain dispersion": 0.0023550488986074924,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03352864583333337,
+        "flow magnitude": 0.13480661809444427
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "noise_rms",
+        "strength": 0.3,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.004351256415247917,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.011115900008007884,
+        "reconstruction loss": 0.9659357070922852,
+        "cycle error": 0.21784895658493042,
+        "strain dispersion": 0.002422369783744216,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03385416666666663,
+        "flow magnitude": 0.13410308957099915
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_gain",
+        "strength": 0.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.002643750747665763,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010049300006357953,
+        "reconstruction loss": 0.9591779112815857,
+        "cycle error": 0.22553014755249023,
+        "strain dispersion": 0.002326083369553089,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03190104166666663,
+        "flow magnitude": 0.13656166195869446
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_gain",
+        "strength": 1.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010552399995503947,
+        "reconstruction loss": 0.9595521092414856,
+        "cycle error": 0.2207641899585724,
+        "strain dispersion": 0.0023795715533196926,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.033203125,
+        "flow magnitude": 0.13478228449821472
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_gain",
+        "strength": 1.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0008586483309045434,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010051499994006008,
+        "reconstruction loss": 0.9597053527832031,
+        "cycle error": 0.21974271535873413,
+        "strain dispersion": 0.00241179671138525,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.033203125,
+        "flow magnitude": 0.13413819670677185
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_stripe_fraction",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010552399995503947,
+        "reconstruction loss": 0.9595521092414856,
+        "cycle error": 0.2207641899585724,
+        "strain dispersion": 0.0023795715533196926,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.033203125,
+        "flow magnitude": 0.13478228449821472
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_stripe_fraction",
+        "strength": 0.1,
+        "proxy_failure": 1,
+        "risk_raw": 0.9782337595059402,
+        "risk_calibrated": 0.9782337595059402,
+        "flow_change_pixels": 0.0056913248263299465,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.009963399992557243,
+        "reconstruction loss": 0.9703114628791809,
+        "cycle error": 0.22955523431301117,
+        "strain dispersion": 0.002487632678821683,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03287760416666663,
+        "flow magnitude": 0.13821396231651306
+      },
+      {
+        "id": "demo_022",
+        "domain": "synthetic_fixture",
+        "group": "fixture_022",
+        "condition": "post_stripe_fraction",
+        "strength": 0.25,
+        "proxy_failure": 1,
+        "risk_raw": 0.960329367370071,
+        "risk_calibrated": 0.960329367370071,
+        "flow_change_pixels": 0.012769256718456745,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.00956519998726435,
+        "reconstruction loss": 0.9448482990264893,
+        "cycle error": 0.2278464138507843,
+        "strain dispersion": 0.003141494933515787,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03125,
+        "flow magnitude": 0.12930002808570862
+      }
+    ],
+    "examples": 2,
+    "normalization": "Clean shared pair normalization retained; perturb post frame afterward.",
+    "interpretation": "Held-out perturbation sensitivity; no real-data displacement truth is available.",
+    "risk_model_status": "Frozen training fit and calibration; no adaptation to perturbations."
+  },
+  "analytic_benchmark": {
+    "status": "completed",
+    "rows": [
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.008995999989565462,
+        "neural_strain_mae": 0.0029560865368694067,
+        "neural_epe_pixels": 0.07987235486507416,
+        "phase_epe_pixels": 5.386028980732348e-18,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.00979630000074394,
+        "neural_strain_mae": 0.0029450408183038235,
+        "neural_epe_pixels": 0.08016163110733032,
+        "phase_epe_pixels": 0.09999378770589828,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.009484900016104802,
+        "neural_strain_mae": 0.0029707655776292086,
+        "neural_epe_pixels": 0.08251447230577469,
+        "phase_epe_pixels": 0.32318443059921265,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.015497800020966679,
+        "neural_strain_mae": 0.0030023970175534487,
+        "neural_epe_pixels": 0.4120897650718689,
+        "phase_epe_pixels": 0.1765182763338089,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.007919700001366436,
+        "neural_strain_mae": 0.0030142017640173435,
+        "neural_epe_pixels": 0.41235920786857605,
+        "phase_epe_pixels": 0.18072320520877838,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.008420300000580028,
+        "neural_strain_mae": 0.0030493272934108973,
+        "neural_epe_pixels": 0.41213706135749817,
+        "phase_epe_pixels": 0.28970712423324585,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.014883900003042072,
+        "neural_strain_mae": 0.0029805011581629515,
+        "neural_epe_pixels": 0.9093133807182312,
+        "phase_epe_pixels": 0.25125211477279663,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.008901900000637397,
+        "neural_strain_mae": 0.0029912982136011124,
+        "neural_epe_pixels": 0.909598171710968,
+        "phase_epe_pixels": 0.0708664208650589,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.008217900001909584,
+        "neural_strain_mae": 0.00300771975889802,
+        "neural_epe_pixels": 0.9095141291618347,
+        "phase_epe_pixels": 0.12666106224060059,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.011520700005348772,
+        "neural_strain_mae": 0.0033543917816132307,
+        "neural_epe_pixels": 1.9067739248275757,
+        "phase_epe_pixels": 0.4860782325267792,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.008395099983317778,
+        "neural_strain_mae": 0.0034045500215142965,
+        "neural_epe_pixels": 1.9072908163070679,
+        "phase_epe_pixels": 0.42887863516807556,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.008355099998880178,
+        "neural_strain_mae": 0.0034402606543153524,
+        "neural_epe_pixels": 1.9096955060958862,
+        "phase_epe_pixels": 0.05299000442028046,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.012927300005685538,
+        "neural_strain_mae": 0.003151391865685582,
+        "neural_epe_pixels": 4.008816719055176,
+        "phase_epe_pixels": 0.8995178937911987,
+        "zero_epe_pixels": 4.123105049133301
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.00877859999309294,
+        "neural_strain_mae": 0.003177594393491745,
+        "neural_epe_pixels": 4.009220600128174,
+        "phase_epe_pixels": 0.11250055581331253,
+        "zero_epe_pixels": 4.123105049133301
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.009937800001353025,
+        "neural_strain_mae": 0.003191254800185561,
+        "neural_epe_pixels": 4.008988857269287,
+        "phase_epe_pixels": 0.08498556166887283,
+        "zero_epe_pixels": 4.123105049133301
+      }
+    ],
+    "origin": "analytic_continuous_texture_translation",
+    "claim_boundary": "Software/reference-fixture accuracy only; not validated acoustic or clinical performance.",
+    "truth": "pre=T(z,x); post=T(z-uz,x-ux); reference-to-moving flow=[ux,uz]; true strain=0.",
+    "evaluation": "Fixed truth-defined interior margin; identical support for all three estimators."
+  },
+  "analytic_fixture_test_metrics": {
+    "analytic_epe_pixels": 1.4938921496767552,
+    "analytic_zero_epe_pixels": 1.5559707803125375,
+    "analytic_phase_epe_pixels": 0.17987902575855189,
+    "analytic_strain_mae": 0.003260423274089893
+  },
+  "analytic_fixture_note": "Analytic translations verify the software; they are not validated acoustic simulations."
+}

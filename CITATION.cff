@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+message: "Please cite the dataset authors and methods listed in docs/references.bib. Add your actual research authorship before publishing this repository."
+title: "ElastoGrade Research"
+version: 0.1.0
+type: software
+license: MIT

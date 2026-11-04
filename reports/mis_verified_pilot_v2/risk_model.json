@@ -1,0 +1,128 @@
+{
+  "model": {
+    "schema_version": 1,
+    "fit_role": "train",
+    "seed": 42,
+    "endpoint": "declared_operational_proxy_failure_not_tumor_grade",
+    "factorization": "P(F) P(Z|F) product_i P(Xi|F,Z)",
+    "estimator": "unsupervised_EM_representation_then_supervised_soft_count_CPDS",
+    "feature_count": 6,
+    "training_rows": 3,
+    "training_class_counts": [
+      0,
+      3
+    ],
+    "thresholds": [
+      1.8267816305160522,
+      0.014202260412275791,
+      0.00020859588403254747,
+      0.0,
+      0.04264322916666663,
+      0.006788788363337517
+    ],
+    "discretization": "Xi=1 iff feature_i > training_median_i",
+    "prior": [
+      0.2,
+      0.8
+    ],
+    "cpd_z": [
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.39999999999995,
+        0.60000000000005
+      ]
+    ],
+    "cpd_x": [
+      [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ],
+      [
+        [
+          0.3333333333333611,
+          0.3333333333333611,
+          0.6666666666666389,
+          0.3333333333333611,
+          0.6666666666666389,
+          0.3333333333333611
+        ],
+        [
+          0.4999999999999687,
+          0.4999999999999687,
+          0.25000000000004685,
+          0.24999999999998435,
+          0.25000000000004685,
+          0.4999999999999687
+        ]
+      ]
+    ],
+    "pseudocount": 1.0,
+    "representation": {
+      "weights": [
+        0.33333333333325,
+        0.66666666666675
+      ],
+      "emission": [
+        [
+          1e-06,
+          1e-06,
+          0.999999,
+          1e-06,
+          0.999999,
+          1e-06
+        ],
+        [
+          0.4999999999999375,
+          0.4999999999999375,
+          1e-06,
+          1e-06,
+          1e-06,
+          0.4999999999999375
+        ]
+      ],
+      "log_likelihood_history": [
+        -4.845273656931977,
+        -2.8824728939088176,
+        -2.4208532188124985,
+        -2.2140322013149203,
+        -2.055290109622849,
+        -2.022949243071234,
+        -2.02281252941662,
+        -2.0228125294166204
+      ],
+      "interpretation": "Unordered latent evidence patterns, not tumor grades."
+    },
+    "probability_status": "Uncalibrated model probability until independent calibration.",
+    "warning": "Training data contain one outcome class; discrimination is not established."
+  },
+  "calibrator": {
+    "status": "skipped: fewer than 8 rows or one outcome class",
+    "coef": null
+  },
+  "feature_names": [
+    "reconstruction loss",
+    "cycle error",
+    "strain dispersion",
+    "fold fraction",
+    "out-of-frame fraction",
+    "flow magnitude"
+  ],
+  "endpoint": "feature-derived operational proxy failure"
+}

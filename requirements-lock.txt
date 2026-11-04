@@ -1,0 +1,15 @@
+# Tested direct dependencies. Install appropriate CPU/CUDA PyTorch wheel separately.
+numpy==2.5.3
+scipy==1.17.0
+matplotlib==3.10.8
+scikit-learn==1.8.0
+PyYAML==6.0.3
+torch==2.14.0
+typer==0.27.2
+rich==15.0.0
+textual==8.2.8
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.3.0
+h5py==3.16.0
+pytest==9.1.1

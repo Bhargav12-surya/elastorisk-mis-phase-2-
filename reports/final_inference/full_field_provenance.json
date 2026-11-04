@@ -1,0 +1,18 @@
+{
+  "input": "D:\\MIS\\data\\phantom\\Data_1.mat",
+  "checkpoint": "D:\\MIS\\reports\\mis_full_training\\best.pt",
+  "shape": [
+    2,
+    1920,
+    384
+  ],
+  "patch": [
+    256,
+    128
+  ],
+  "overlap": 32,
+  "normalization": "Shared RF normalization per tile, matching training",
+  "tiles": 36,
+  "pathology_grade_available": false,
+  "warning": "Tiling can introduce motion discontinuities at tile boundaries; validate on held-out data."
+}

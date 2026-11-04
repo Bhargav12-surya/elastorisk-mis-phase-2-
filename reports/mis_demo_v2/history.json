@@ -1,0 +1,17 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.6236600825296981,
+    "validation_loss": 0.8092585057020187,
+    "lr": 0.0002,
+    "seconds": 0.8692327000026125,
+    "epoch_seconds": 0.8687351999979,
+    "training_patches": 28,
+    "patches_per_second_including_validation": 32.23076490979954,
+    "train_photo": 0.619778661057353,
+    "train_cycle": 0.038098587920623164,
+    "train_smooth": 0.0034176433400716633,
+    "train_fold": 0.0,
+    "train_support": 0.00032040801566576453
+  }
+]

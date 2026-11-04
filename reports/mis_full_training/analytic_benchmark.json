@@ -1,0 +1,249 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "axial_shift_pixels": 0.0,
+      "lateral_shift_pixels": 0.0,
+      "true_magnitude_pixels": 0.0,
+      "noise_rms": 0.0,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4644,
+      "inference_seconds": 0.018415799999274896,
+      "neural_strain_mae": 0.0019975085742771626,
+      "neural_epe_pixels": 0.02260950766503811,
+      "phase_epe_pixels": 0.0,
+      "zero_epe_pixels": 0.0
+    },
+    {
+      "axial_shift_pixels": 0.0,
+      "lateral_shift_pixels": 0.0,
+      "true_magnitude_pixels": 0.0,
+      "noise_rms": 0.1,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4644,
+      "inference_seconds": 0.010759099999631871,
+      "neural_strain_mae": 0.003921800293028355,
+      "neural_epe_pixels": 0.03985880687832832,
+      "phase_epe_pixels": 0.025894436985254288,
+      "zero_epe_pixels": 0.0
+    },
+    {
+      "axial_shift_pixels": 0.0,
+      "lateral_shift_pixels": 0.0,
+      "true_magnitude_pixels": 0.0,
+      "noise_rms": 0.3,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4644,
+      "inference_seconds": 0.010771999999633408,
+      "neural_strain_mae": 0.009919924661517143,
+      "neural_epe_pixels": 0.10227469354867935,
+      "phase_epe_pixels": 0.19386878609657288,
+      "zero_epe_pixels": 0.0
+    },
+    {
+      "axial_shift_pixels": 0.5,
+      "lateral_shift_pixels": 0.125,
+      "true_magnitude_pixels": 0.5153882032022076,
+      "noise_rms": 0.0,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.010784199999761768,
+      "neural_strain_mae": 0.003479163395240903,
+      "neural_epe_pixels": 0.12632609903812408,
+      "phase_epe_pixels": 0.1672961562871933,
+      "zero_epe_pixels": 0.5153881311416626
+    },
+    {
+      "axial_shift_pixels": 0.5,
+      "lateral_shift_pixels": 0.125,
+      "true_magnitude_pixels": 0.5153882032022076,
+      "noise_rms": 0.1,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.010662300001058611,
+      "neural_strain_mae": 0.004686214029788971,
+      "neural_epe_pixels": 0.13256925344467163,
+      "phase_epe_pixels": 0.6917794942855835,
+      "zero_epe_pixels": 0.5153881311416626
+    },
+    {
+      "axial_shift_pixels": 0.5,
+      "lateral_shift_pixels": 0.125,
+      "true_magnitude_pixels": 0.5153882032022076,
+      "noise_rms": 0.3,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.010811099999045837,
+      "neural_strain_mae": 0.009609176777303219,
+      "neural_epe_pixels": 0.16669844090938568,
+      "phase_epe_pixels": 0.3027856647968292,
+      "zero_epe_pixels": 0.5153881311416626
+    },
+    {
+      "axial_shift_pixels": 1.0,
+      "lateral_shift_pixels": 0.25,
+      "true_magnitude_pixels": 1.0307764064044151,
+      "noise_rms": 0.0,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.01012540000010631,
+      "neural_strain_mae": 0.00673393439501524,
+      "neural_epe_pixels": 0.24759581685066223,
+      "phase_epe_pixels": 0.22393086552619934,
+      "zero_epe_pixels": 1.0307762622833252
+    },
+    {
+      "axial_shift_pixels": 1.0,
+      "lateral_shift_pixels": 0.25,
+      "true_magnitude_pixels": 1.0307764064044151,
+      "noise_rms": 0.1,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.0119935999991867,
+      "neural_strain_mae": 0.007565564941614866,
+      "neural_epe_pixels": 0.2521570920944214,
+      "phase_epe_pixels": 0.12980638444423676,
+      "zero_epe_pixels": 1.0307762622833252
+    },
+    {
+      "axial_shift_pixels": 1.0,
+      "lateral_shift_pixels": 0.25,
+      "true_magnitude_pixels": 1.0307764064044151,
+      "noise_rms": 0.3,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4368,
+      "inference_seconds": 0.010945100000753882,
+      "neural_strain_mae": 0.01141160074621439,
+      "neural_epe_pixels": 0.27740684151649475,
+      "phase_epe_pixels": 1.1007412672042847,
+      "zero_epe_pixels": 1.0307762622833252
+    },
+    {
+      "axial_shift_pixels": 2.0,
+      "lateral_shift_pixels": 0.5,
+      "true_magnitude_pixels": 2.0615528128088303,
+      "noise_rms": 0.0,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4100,
+      "inference_seconds": 0.011539299999640207,
+      "neural_strain_mae": 0.012297827750444412,
+      "neural_epe_pixels": 0.49605169892311096,
+      "phase_epe_pixels": 0.4756055772304535,
+      "zero_epe_pixels": 2.0615525245666504
+    },
+    {
+      "axial_shift_pixels": 2.0,
+      "lateral_shift_pixels": 0.5,
+      "true_magnitude_pixels": 2.0615528128088303,
+      "noise_rms": 0.1,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4100,
+      "inference_seconds": 0.011411699999371194,
+      "neural_strain_mae": 0.012952441349625587,
+      "neural_epe_pixels": 0.4981878697872162,
+      "phase_epe_pixels": 0.19190789759159088,
+      "zero_epe_pixels": 2.0615525245666504
+    },
+    {
+      "axial_shift_pixels": 2.0,
+      "lateral_shift_pixels": 0.5,
+      "true_magnitude_pixels": 2.0615528128088303,
+      "noise_rms": 0.3,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 4100,
+      "inference_seconds": 0.011670399999275105,
+      "neural_strain_mae": 0.015994854271411896,
+      "neural_epe_pixels": 0.5143886804580688,
+      "phase_epe_pixels": 0.2247958779335022,
+      "zero_epe_pixels": 2.0615525245666504
+    },
+    {
+      "axial_shift_pixels": 4.0,
+      "lateral_shift_pixels": 1.0,
+      "true_magnitude_pixels": 4.123105625617661,
+      "noise_rms": 0.0,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 3588,
+      "inference_seconds": 0.011870700000145007,
+      "neural_strain_mae": 0.023798400536179543,
+      "neural_epe_pixels": 0.9880165457725525,
+      "phase_epe_pixels": 0.9489739537239075,
+      "zero_epe_pixels": 4.123105049133301
+    },
+    {
+      "axial_shift_pixels": 4.0,
+      "lateral_shift_pixels": 1.0,
+      "true_magnitude_pixels": 4.123105625617661,
+      "noise_rms": 0.1,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 3588,
+      "inference_seconds": 0.0104762999999366,
+      "neural_strain_mae": 0.02477841079235077,
+      "neural_epe_pixels": 0.9943984150886536,
+      "phase_epe_pixels": 0.5456832647323608,
+      "zero_epe_pixels": 4.123105049133301
+    },
+    {
+      "axial_shift_pixels": 4.0,
+      "lateral_shift_pixels": 1.0,
+      "true_magnitude_pixels": 4.123105625617661,
+      "noise_rms": 0.3,
+      "shape": [
+        96,
+        64
+      ],
+      "evaluation_pixels": 3588,
+      "inference_seconds": 0.010748299999249866,
+      "neural_strain_mae": 0.02694094553589821,
+      "neural_epe_pixels": 1.0155636072158813,
+      "phase_epe_pixels": 44.65198516845703,
+      "zero_epe_pixels": 4.123105049133301
+    }
+  ],
+  "origin": "analytic_continuous_texture_translation",
+  "claim_boundary": "Software/reference-fixture accuracy only; not validated acoustic or clinical performance.",
+  "truth": "pre=T(z,x); post=T(z-uz,x-ux); reference-to-moving flow=[ux,uz]; true strain=0.",
+  "evaluation": "Fixed truth-defined interior margin; identical support for all three estimators."
+}

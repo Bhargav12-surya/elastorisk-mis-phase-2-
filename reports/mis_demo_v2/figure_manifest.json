@@ -1,0 +1,222 @@
+[
+  {
+    "file": "figures/01_dataset_partitions.png",
+    "pdf": "figures/01_dataset_partitions.pdf",
+    "caption": "Pair counts and group counts in the evaluated subset. Phantom groups remain provisional without acquisition metadata."
+  },
+  {
+    "file": "figures/02_learning_curves.png",
+    "pdf": "figures/02_learning_curves.pdf",
+    "caption": "Training crops are random; validation crops are fixed. Their objectives are not identical sampling distributions."
+  },
+  {
+    "file": "figures/03_quality_distributions.png",
+    "pdf": "figures/03_quality_distributions.pdf",
+    "caption": "Held-out mechanics evidence. These indicators are proxies when reference displacement is unavailable."
+  },
+  {
+    "file": "figures/04_quality_relationships.png",
+    "pdf": "figures/04_quality_relationships.pdf",
+    "caption": "Scatterplots describe empirical relationships; correlation alone cannot establish conditional independence."
+  },
+  {
+    "file": "figures/05_feature_correlations.png",
+    "pdf": "figures/05_feature_correlations.pdf",
+    "caption": "Feature correlations, with constant-feature entries displayed as zero. Graphical-model independence assumptions are evaluated separately."
+  },
+  {
+    "file": "figures/06_registration_baselines.png",
+    "pdf": "figures/06_registration_baselines.pdf",
+    "caption": "Proxy comparisons on the same center crops. Lower reconstruction loss does not by itself establish more accurate displacement."
+  },
+  {
+    "file": "figures/07_proxy_roc_pr.png",
+    "pdf": "figures/07_proxy_roc_pr.pdf",
+    "caption": "Ranking measures quality-rule imitation using the same evidence that defines the rule. They are not independent accuracy metrics."
+  },
+  {
+    "file": "figures/08_proxy_calibration.png",
+    "pdf": "figures/08_proxy_calibration.pdf",
+    "caption": "Platt calibration is fitted on calibration groups only. One-class or tiny calibration sets retain raw BN probabilities."
+  },
+  {
+    "file": "figures/09_selective_risk_coverage.png",
+    "pdf": "figures/09_selective_risk_coverage.pdf",
+    "caption": "Coverage is descriptive for the evaluated subset. Phantom file groups do not guarantee acquisition independence."
+  },
+  {
+    "file": "figures/10_proxy_confusion_decisions.png",
+    "pdf": "figures/10_proxy_confusion_decisions.pdf",
+    "caption": "Actions refer to research mechanics handling. Costs and the probability threshold are illustrative."
+  },
+  {
+    "file": "figures/11_decision_network_costs.png",
+    "pdf": "figures/11_decision_network_costs.pdf",
+    "caption": "Chance node = operational failure; decision = action; utility = negative cost. All costs are assumptions, not clinical recommendations."
+  },
+  {
+    "file": "figures/12_bayesian_and_moral_graphs.png",
+    "pdf": "figures/12_bayesian_and_moral_graphs.pdf",
+    "caption": "F = proxy failure, Z = latent evidence pattern, Xi = binarized quality feature. Co-parents F and Z are already joined in this DAG; a separate collider example in pgm_results.json demonstrates a newly added marriage edge."
+  },
+  {
+    "file": "figures/13_latent_representation.png",
+    "pdf": "figures/13_latent_representation.pdf",
+    "caption": "Bernoulli-mixture components describe quality patterns and have no intrinsic ordering or tumor-grade interpretation."
+  },
+  {
+    "file": "figures/13b_em_and_bayesian_cpds.png",
+    "pdf": "figures/13b_em_and_bayesian_cpds.pdf",
+    "caption": "EM fits an unlabeled Bernoulli mixture; smoothed soft counts then fit the supervised proxy-event BN. This is a two-stage estimator."
+  },
+  {
+    "file": "figures/14_cnn_representation_phenotypes.png",
+    "pdf": "figures/14_cnn_representation_phenotypes.pdf",
+    "caption": "Standardization, PCA and clustering are fitted on training embeddings. Cluster IDs are descriptive and are not histological grades."
+  },
+  {
+    "file": "figures/15_phenotype_mechanics.png",
+    "pdf": "figures/15_phenotype_mechanics.pdf",
+    "caption": "Strain is a deformation measurement under unknown loading. It does not supply absolute stiffness or tumor grade."
+  },
+  {
+    "file": "figures/16_hmm_filter_smooth_viterbi.png",
+    "pdf": "figures/16_hmm_filter_smooth_viterbi.pdf",
+    "caption": "HMM filtering uses past evidence; smoothing uses the complete sequence. This educational example does not infer time from unrelated phantom filenames."
+  },
+  {
+    "file": "figures/16b_hmm_parameters.png",
+    "pdf": "figures/16b_hmm_parameters.pdf",
+    "caption": "HMM parameters are explicit educational assumptions, not fitted temporal measurements from the RF archive."
+  },
+  {
+    "file": "figures/17_markov_independence_checks.png",
+    "pdf": "figures/17_markov_independence_checks.pdf",
+    "caption": "The moral graph encodes separation statements. Multiplying the original family CPDs preserves the BN joint; moralization alone does not define new probabilities."
+  },
+  {
+    "file": "figures/18_grouped_bootstrap.png",
+    "pdf": "figures/18_grouped_bootstrap.pdf",
+    "caption": "Groups are resampled, not individual pixels. Intervals reflect only the evaluated subset and chosen manifest grouping; mixed endpoints retain their native units."
+  },
+  {
+    "file": "figures/19_uncertainty_and_split_metrics.png",
+    "pdf": "figures/19_uncertainty_and_split_metrics.pdf",
+    "caption": "Dropout spread is a sensitivity measure, not a calibrated probability of displacement error."
+  },
+  {
+    "file": "figures/20_example_00_elastography.png",
+    "pdf": "figures/20_example_00_elastography.pdf",
+    "caption": "Fixed display limits facilitate comparison; raw numeric maps retain unclipped values. This is mechanics analysis without pathology grades."
+  },
+  {
+    "file": "figures/21_example_00_mrf.png",
+    "pdf": "figures/21_example_00_mrf.pdf",
+    "caption": "Unit 3: feature-conditioned spatial MRF. ICM finds a local minimum; labels indicate spatial quality patterns, not tumors."
+  },
+  {
+    "file": "figures/22_example_00_mrf_sensitivity.png",
+    "pdf": "figures/22_example_00_mrf_sensitivity.pdf",
+    "caption": "Sensitivity to the assumed neighbor penalty; stronger smoothness can erase narrow quality boundaries."
+  },
+  {
+    "file": "figures/23_bn_single_evidence.png",
+    "pdf": "figures/23_bn_single_evidence.pdf",
+    "caption": "Xi uses its frozen training median. Every other feature is marginalized, so these are exact single-evidence BN queries, not causal effects or feature importance."
+  },
+  {
+    "file": "figures/24_bn_progressive_missing_evidence.png",
+    "pdf": "figures/24_bn_progressive_missing_evidence.pdf",
+    "caption": "An omitted observation is marginalized rather than replaced by zero. Curves use actual held-out cases with lowest/highest raw BN scores; the fixed evidence order is not an importance ranking."
+  },
+  {
+    "file": "figures/25_paired_group_baseline_differences.png",
+    "pdf": "figures/25_paired_group_baseline_differences.pdf",
+    "caption": "Positive differences favor neural reconstruction. Group bootstrap preserves pairing. Supports can differ after warping; these are reconstruction proxies, not reference displacement errors. Exploratory sign tests in JSON are unadjusted and rely on group independence."
+  },
+  {
+    "file": "figures/26_reconstruction_ecdf.png",
+    "pdf": "figures/26_reconstruction_ecdf.pdf",
+    "caption": "ECDFs use every selected held-out pair, then one mean per manifest group. A curve farther left has lower reconstruction loss; accuracy cannot be inferred without reference motion."
+  },
+  {
+    "file": "figures/27_domain_quality_boxplots.png",
+    "pdf": "figures/27_domain_quality_boxplots.pdf",
+    "caption": "Held-out distribution summaries expose spread and outliers. Boxplots are descriptive; source domains can differ in noise, motion, loading, and pairing assumptions."
+  },
+  {
+    "file": "figures/28_quality_rule_threshold_sensitivity.png",
+    "pdf": "figures/28_quality_rule_threshold_sensitivity.pdf",
+    "caption": "This sensitivity plot changes the definition of the operational event; it does not measure model discrimination or tune a clinical cutoff. Cyan lines mark the current declared thresholds. Folding/support limits stay fixed."
+  },
+  {
+    "file": "figures/29_quality_rule_failure_causes.png",
+    "pdf": "figures/29_quality_rule_failure_causes.pdf",
+    "caption": "Flags use the same features that define the proxy target. Causes can overlap and indicate rule violations, not independently verified physical failure mechanisms."
+  },
+  {
+    "file": "figures/30_risk_cutoff_operating_curves.png",
+    "pdf": "figures/30_risk_cutoff_operating_curves.pdf",
+    "caption": "These curves describe cutoff trade-offs on held-out proxy outcomes. Blank segments mean no accepted pairs or no event denominator. This is a research handling rule, not patient triage."
+  },
+  {
+    "file": "figures/31_calibration_score_movement.png",
+    "pdf": "figures/31_calibration_score_movement.pdf",
+    "caption": "The adjustment was fitted only on calibration groups. Identity movement is expected when calibration was skipped; the calibrator status remains in summary.json."
+  },
+  {
+    "file": "figures/32_latent_pattern_entropy.png",
+    "pdf": "figures/32_latent_pattern_entropy.pdf",
+    "caption": "Entropy is computed from the train-fitted Bernoulli mixture. A low-entropy evidence pattern may still be confidently unreliable; entropy alone is not an error probability."
+  },
+  {
+    "file": "figures/33_phenotype_domain_composition.png",
+    "pdf": "figures/33_phenotype_domain_composition.pdf",
+    "caption": "Clusters were fitted only on training embeddings. A domain-dominated cluster is evidence of acquisition structure, not a tissue diagnosis. Cluster indices have no ordinal meaning."
+  },
+  {
+    "file": "figures/34_group_failure_atlas.png",
+    "pdf": "figures/34_group_failure_atlas.pdf",
+    "caption": "Groups are ordered by predicted proxy risk, with at most twelve displayed. Heatmap colors are within-test feature ranks; native-unit means for every group are exported in JSON. Phantom grouping remains provisional without acquisition IDs."
+  },
+  {
+    "file": "figures/35_example_00_depth_profiles.png",
+    "pdf": "figures/35_example_00_depth_profiles.pdf",
+    "caption": "Profiles summarize valid lateral samples at each depth. Shading is spatial interquartile spread, not an uncertainty interval or pathology-linked tissue estimate. Border depths with no support are left blank."
+  },
+  {
+    "file": "figures/36_example_00_vector_field_rf_alignment.png",
+    "pdf": "figures/36_example_00_vector_field_rf_alignment.pdf",
+    "caption": "Arrow magnification is explicitly reported and changes only display length. RF waveforms preserve carrier phase; a central line is an inspection aid rather than a complete 2D registration metric."
+  },
+  {
+    "file": "figures/37_example_00_jacobian_support_strain_histogram.png",
+    "pdf": "figures/37_example_00_jacobian_support_strain_histogram.pdf",
+    "caption": "Jacobian colors show a symmetric range around one, clipped at the 99th percentile of deviation. Red pixels mark Jacobian <= 0 inside valid support. Shared histogram bins show the central 99% strain range across saved examples; tail counts and raw maps remain available."
+  },
+  {
+    "file": "figures/30_perturbation_quality.png",
+    "pdf": "figures/30_perturbation_quality.pdf",
+    "caption": "Measured reconstruction and cycle sensitivity. Gain mismatch is applied after shared normalization; local correlation can be gain invariant. Lines are pair means; shading is the observed pair range, not a confidence interval."
+  },
+  {
+    "file": "figures/31_perturbation_risk_flow.png",
+    "pdf": "figures/31_perturbation_risk_flow.pdf",
+    "caption": "Frozen BN proxy risk and mean flow change from clean input. Flow change is sensitivity, not displacement error. Lines are pair means; shading is the observed pair range, not a confidence interval."
+  },
+  {
+    "file": "figures/32_perturbation_runtime_events.png",
+    "pdf": "figures/32_perturbation_runtime_events.pdf",
+    "caption": "CUDA timings synchronize the device. Latencies include two network directions, exclude quality-map computation, and are not a hardware benchmark; event parameters have different units."
+  },
+  {
+    "file": "figures/33_analytic_translation_accuracy.png",
+    "pdf": "figures/33_analytic_translation_accuracy.pdf",
+    "caption": "Independent known translations of a continuous synthetic texture. All estimators use the same truth-defined interior. These are fixture results, not real RF accuracy or clinical evidence."
+  },
+  {
+    "file": "figures/34_analytic_strain_and_error_ecdf.png",
+    "pdf": "figures/34_analytic_strain_and_error_ecdf.pdf",
+    "caption": "Rigid translations have exactly zero strain; nonzero estimated strain is an artifact in this reference fixture. ECDF weights each controlled case equally."
+  }
+]

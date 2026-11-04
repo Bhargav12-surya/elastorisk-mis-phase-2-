@@ -1,0 +1,29 @@
+accumulation: 4
+amp: true
+data_mode: real
+device: cuda
+epochs: 50
+loss:
+  env: 0.2
+  fb: 0.1
+  jacobian: 0.01
+  rf: 1.0
+  smooth: 0.02
+  sup: 0.0
+lr: 0.001
+manifest: artifacts/manifest.json
+model:
+  attention: false
+  confidence: false
+  inputs: rf
+  name: pyramid
+  radius: 1
+  width: 8
+output: reports/gpu_8gb
+regime: self_supervised
+samples: 12
+seed: 42
+shape:
+- 256
+- 128
+threads: 2

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "torch": "2.15.0+cpu",
+  "cuda_build": null,
+  "cuda_available": false,
+  "gpu": null,
+  "script_sha256": "b72a971450c4b9cb23c8e43fc0e6fd0332564083ea814dc44db096cf552a622e"
+}

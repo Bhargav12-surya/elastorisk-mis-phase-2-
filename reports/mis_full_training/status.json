@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "epochs": 50,
+  "best_validation_loss": 0.02109570055292895,
+  "elapsed_seconds": 7065.4907262,
+  "peak_cuda_bytes": 166462976,
+  "parameters": 34278,
+  "pathology_validation": false
+}

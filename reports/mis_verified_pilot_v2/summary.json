@@ -1,0 +1,849 @@
+{
+  "version": "1.1.0",
+  "endpoint": "feature-derived operational proxy failure",
+  "endpoint_warning": "Risk metrics measure imitation of a declared quality rule; they do not establish displacement accuracy or cancer grading.",
+  "crop_protocol": "one fixed center crop per selected RF pair",
+  "patch": [
+    64,
+    48
+  ],
+  "selected_pairs": 12,
+  "available_pairs": 12,
+  "thresholds": {
+    "residual": 0.45,
+    "cycle_pixels": 1.0,
+    "fold_fraction": 0.01,
+    "invalid_fraction": 0.25
+  },
+  "calibrator": {
+    "status": "skipped: fewer than 8 rows or one outcome class",
+    "coef": null
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "cuda_build": null,
+    "cuda_available": false,
+    "gpu": null,
+    "script_sha256": "85b43234c37197cae56379bb1ce691f251aa49efac2cd1828d22b281d653c8c3"
+  },
+  "elapsed_seconds": 0.9376484999957029,
+  "manifest_notes": [
+    "RF motion learning is self-supervised; neither pathology grades nor true displacement targets are supplied.",
+    "Initial flows and simulation axial/lateral companion files are excluded from training and accuracy claims.",
+    "data/test is inventoried but excluded because its sequence/provenance contract is unknown.",
+    "Exact float32 pair duplicates are consolidated before group splitting. Near-duplicates require acquisition IDs.",
+    "60/15/10/15 are target group fractions; rounding reserves at least one group per role in each domain.",
+    "PROVISIONAL PHANTOM SPLIT: file identities are used because acquisition IDs are absent. Correlated frames may remain across partitions; results do not establish acquisition-level generalization.",
+    "UNVERIFIED SIMULATION AXIS ASSUMPTION: RF leading axis 1 is ordered deformation; axis 0 is realization. Adjacent selected frames are paired. All realizations/frequencies of modelN share one geometry group."
+  ],
+  "metrics": {
+    "train": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.009570600361807848,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.09771332211038433
+    },
+    "validation": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.011562139004100136,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.10681819772707078
+    },
+    "calibration": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.01273785113513797,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.11196071150948908
+    },
+    "test": {
+      "n": 3,
+      "prevalence": 1.0,
+      "brier": 0.07787943526935243,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.2611537392637831
+    }
+  },
+  "domain_metrics": {
+    "phantom": {
+      "n": 1,
+      "prevalence": 1.0,
+      "brier": 0.014890527422449885,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.12202674879898212
+    },
+    "simulation": {
+      "n": 2,
+      "prevalence": 1.0,
+      "brier": 0.1093738891928037,
+      "accuracy_at_0.5": 1.0,
+      "confusion_matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "roc_auc": null,
+      "average_precision": null,
+      "ranking_metric_status": "unavailable: only one outcome class",
+      "ece_10_bins": 0.3307172344961836
+    }
+  },
+  "test_grouped_statistics": {
+    "reconstruction loss": {
+      "mean": 1.4835470914840698,
+      "ci95": [
+        1.0922715663909912,
+        1.8748226165771484
+      ],
+      "groups": 2,
+      "weighting": "equal group"
+    },
+    "zero_residual": {
+      "mean": 1.4838733971118927,
+      "ci95": [
+        1.0927413702011108,
+        1.8750054240226746
+      ],
+      "groups": 2,
+      "weighting": "equal group"
+    },
+    "phase_residual": {
+      "mean": 0.029490617220290005,
+      "ci95": [
+        0.009987561265006661,
+        0.04899367317557335
+      ],
+      "groups": 2,
+      "weighting": "equal group"
+    },
+    "proxy_failure": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "groups": 2,
+      "weighting": "equal group"
+    }
+  },
+  "pathology_grade_available": false,
+  "simulation_displacement_labels_used": false,
+  "normalization_version": 2,
+  "checkpoint_training_version": "1.1.0",
+  "checkpoint_path": "D:\\MIS\\reports\\mis_verified_pilot_v2\\best.pt",
+  "example_protocol": "Held-out domains and acquisition groups selected in round-robin order.",
+  "robustness_study": {
+    "status": "completed",
+    "rows": [
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "noise_rms",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007092899992130697,
+        "reconstruction loss": 1.0922715663909912,
+        "cycle error": 0.012527991086244583,
+        "strain dispersion": 0.00021701239165849984,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04069010416666663,
+        "flow magnitude": 0.006095552816987038
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "noise_rms",
+        "strength": 0.05,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.00015064713079482317,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006577299995115027,
+        "reconstruction loss": 1.0927255153656006,
+        "cycle error": 0.01249973475933075,
+        "strain dispersion": 0.00022075546439737082,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04069010416666663,
+        "flow magnitude": 0.0061070905067026615
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "noise_rms",
+        "strength": 0.15,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.00044562233961187303,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.008681699982844293,
+        "reconstruction loss": 1.0927751064300537,
+        "cycle error": 0.012447834014892578,
+        "strain dispersion": 0.00022681662812829018,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04036458333333337,
+        "flow magnitude": 0.006091733928769827
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "noise_rms",
+        "strength": 0.3,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0008066738373599946,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007849299989175051,
+        "reconstruction loss": 1.0909035205841064,
+        "cycle error": 0.012348278425633907,
+        "strain dispersion": 0.00023229903308674693,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0400390625,
+        "flow magnitude": 0.005964172072708607
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_gain",
+        "strength": 0.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0005932003841735423,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.005981499998597428,
+        "reconstruction loss": 1.0923423767089844,
+        "cycle error": 0.012331914156675339,
+        "strain dispersion": 0.00021508947247639298,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03841145833333337,
+        "flow magnitude": 0.0059073311276733875
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_gain",
+        "strength": 1.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007092899992130697,
+        "reconstruction loss": 1.0922715663909912,
+        "cycle error": 0.012527991086244583,
+        "strain dispersion": 0.00021701239165849984,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04069010416666663,
+        "flow magnitude": 0.006095552816987038
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_gain",
+        "strength": 1.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.00020870898151770234,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007684700016397983,
+        "reconstruction loss": 1.092257022857666,
+        "cycle error": 0.012603187933564186,
+        "strain dispersion": 0.00021883832232560962,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04134114583333337,
+        "flow magnitude": 0.006139330565929413
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_stripe_fraction",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007092899992130697,
+        "reconstruction loss": 1.0922715663909912,
+        "cycle error": 0.012527991086244583,
+        "strain dispersion": 0.00021701239165849984,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04069010416666663,
+        "flow magnitude": 0.006095552816987038
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_stripe_fraction",
+        "strength": 0.1,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0008953685755841434,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.010955500009004027,
+        "reconstruction loss": 1.0868548154830933,
+        "cycle error": 0.012510085478425026,
+        "strain dispersion": 0.00021832498896401376,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03841145833333337,
+        "flow magnitude": 0.006002112757414579
+      },
+      {
+        "id": "phantom_42cd95a926bf0b0049d3",
+        "domain": "phantom",
+        "group": "phantom:file:phantom/Data_1.mat",
+        "condition": "post_stripe_fraction",
+        "strength": 0.25,
+        "proxy_failure": 1,
+        "risk_raw": 0.8779732512010179,
+        "risk_calibrated": 0.8779732512010179,
+        "flow_change_pixels": 0.0018175721634179354,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006432700000004843,
+        "reconstruction loss": 1.050032377243042,
+        "cycle error": 0.01203673891723156,
+        "strain dispersion": 0.00020938737725373358,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.03548177083333337,
+        "flow magnitude": 0.0062395804561674595
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "noise_rms",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006626799993682653,
+        "reconstruction loss": 1.864729881286621,
+        "cycle error": 0.014488333836197853,
+        "strain dispersion": 0.00021523828036151826,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04459635416666663,
+        "flow magnitude": 0.007657564245164394
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "noise_rms",
+        "strength": 0.05,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.00010751106310635805,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007467099989298731,
+        "reconstruction loss": 1.863661289215088,
+        "cycle error": 0.014487051405012608,
+        "strain dispersion": 0.0002168958162656054,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04459635416666663,
+        "flow magnitude": 0.00765612255781889
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "noise_rms",
+        "strength": 0.15,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0003177403996232897,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.012034599989419803,
+        "reconstruction loss": 1.853822112083435,
+        "cycle error": 0.014432508498430252,
+        "strain dispersion": 0.00021202494099270552,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.0439453125,
+        "flow magnitude": 0.007660070434212685
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "noise_rms",
+        "strength": 0.3,
+        "proxy_failure": 1,
+        "risk_raw": 0.7588887051430514,
+        "risk_calibrated": 0.7588887051430514,
+        "flow_change_pixels": 0.0006205515237525105,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.009985499986214563,
+        "reconstruction loss": 1.8232084512710571,
+        "cycle error": 0.014448491856455803,
+        "strain dispersion": 0.00020974055223632604,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04296875,
+        "flow magnitude": 0.007634357549250126
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_gain",
+        "strength": 0.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0004886511014774442,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.00881549998302944,
+        "reconstruction loss": 1.8646920919418335,
+        "cycle error": 0.01439785584807396,
+        "strain dispersion": 0.00021150179964024574,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04557291666666663,
+        "flow magnitude": 0.00781385600566864
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_gain",
+        "strength": 1.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006626799993682653,
+        "reconstruction loss": 1.864729881286621,
+        "cycle error": 0.014488333836197853,
+        "strain dispersion": 0.00021523828036151826,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04459635416666663,
+        "flow magnitude": 0.007657564245164394
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_gain",
+        "strength": 1.5,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0001756510027917102,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.00758289999794215,
+        "reconstruction loss": 1.8647384643554688,
+        "cycle error": 0.014470397494733334,
+        "strain dispersion": 0.00021168880630284548,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04524739583333337,
+        "flow magnitude": 0.007639117073267698
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_stripe_fraction",
+        "strength": 0.0,
+        "proxy_failure": 1,
+        "risk_raw": 0.6692827655038164,
+        "risk_calibrated": 0.6692827655038164,
+        "flow_change_pixels": 0.0,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006626799993682653,
+        "reconstruction loss": 1.864729881286621,
+        "cycle error": 0.014488333836197853,
+        "strain dispersion": 0.00021523828036151826,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04459635416666663,
+        "flow magnitude": 0.007657564245164394
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_stripe_fraction",
+        "strength": 0.1,
+        "proxy_failure": 1,
+        "risk_raw": 0.7926915967581595,
+        "risk_calibrated": 0.7926915967581595,
+        "flow_change_pixels": 0.0010173985501751304,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.007500399980926886,
+        "reconstruction loss": 1.8292200565338135,
+        "cycle error": 0.01413644477725029,
+        "strain dispersion": 0.000233593542361632,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04134114583333337,
+        "flow magnitude": 0.007407780736684799
+      },
+      {
+        "id": "simulation_2513b0df3102b66a9879",
+        "domain": "simulation",
+        "group": "simulation:model3",
+        "condition": "post_stripe_fraction",
+        "strength": 0.25,
+        "proxy_failure": 1,
+        "risk_raw": 0.8318610604977424,
+        "risk_calibrated": 0.8318610604977424,
+        "flow_change_pixels": 0.002218308625742793,
+        "common_support_fraction": 0.66796875,
+        "inference_seconds": 0.006994900002609938,
+        "reconstruction loss": 1.6807118654251099,
+        "cycle error": 0.013482201844453812,
+        "strain dispersion": 0.0002487422898411751,
+        "fold fraction": 0.0,
+        "out-of-frame fraction": 0.04069010416666663,
+        "flow magnitude": 0.007140609435737133
+      }
+    ],
+    "examples": 2,
+    "normalization": "Clean shared pair normalization retained; perturb post frame afterward.",
+    "interpretation": "Held-out perturbation sensitivity; no real-data displacement truth is available.",
+    "risk_model_status": "Frozen training fit and calibration; no adaptation to perturbations."
+  },
+  "analytic_benchmark": {
+    "status": "completed",
+    "rows": [
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.006125999992946163,
+        "neural_strain_mae": 0.00021334576013032347,
+        "neural_epe_pixels": 0.00563141331076622,
+        "phase_epe_pixels": 5.386028980732348e-18,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.010681399988243356,
+        "neural_strain_mae": 0.00020836250041611493,
+        "neural_epe_pixels": 0.005615273490548134,
+        "phase_epe_pixels": 0.09999378770589828,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.0,
+        "lateral_shift_pixels": 0.0,
+        "true_magnitude_pixels": 0.0,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 2052,
+        "inference_seconds": 0.008266099990578368,
+        "neural_strain_mae": 0.00020342737843748182,
+        "neural_epe_pixels": 0.0055355532094836235,
+        "phase_epe_pixels": 0.32318443059921265,
+        "zero_epe_pixels": 0.0
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.009832700015977025,
+        "neural_strain_mae": 0.00016943877562880516,
+        "neural_epe_pixels": 0.5174003839492798,
+        "phase_epe_pixels": 0.1765182763338089,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.010919099993770942,
+        "neural_strain_mae": 0.00017177857807837427,
+        "neural_epe_pixels": 0.5174498558044434,
+        "phase_epe_pixels": 0.18072320520877838,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 0.5,
+        "lateral_shift_pixels": 0.125,
+        "true_magnitude_pixels": 0.5153882032022076,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.007235199998831376,
+        "neural_strain_mae": 0.00017603911692276597,
+        "neural_epe_pixels": 0.51759934425354,
+        "phase_epe_pixels": 0.28970712423324585,
+        "zero_epe_pixels": 0.5153880715370178
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.008540199982235208,
+        "neural_strain_mae": 0.00016370842058677226,
+        "neural_epe_pixels": 1.031374216079712,
+        "phase_epe_pixels": 0.25125211477279663,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.006911200005561113,
+        "neural_strain_mae": 0.00016574868641328067,
+        "neural_epe_pixels": 1.0313971042633057,
+        "phase_epe_pixels": 0.0708664208650589,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 1.0,
+        "lateral_shift_pixels": 0.25,
+        "true_magnitude_pixels": 1.0307764064044151,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1872,
+        "inference_seconds": 0.008372100011911243,
+        "neural_strain_mae": 0.0001700904540484771,
+        "neural_epe_pixels": 1.031546711921692,
+        "phase_epe_pixels": 0.12666106224060059,
+        "zero_epe_pixels": 1.0307761430740356
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.008216200018068776,
+        "neural_strain_mae": 0.00018772619660012424,
+        "neural_epe_pixels": 2.06302809715271,
+        "phase_epe_pixels": 0.4860782325267792,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.008360500010894611,
+        "neural_strain_mae": 0.00019138879724778235,
+        "neural_epe_pixels": 2.06303334236145,
+        "phase_epe_pixels": 0.42887863516807556,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 2.0,
+        "lateral_shift_pixels": 0.5,
+        "true_magnitude_pixels": 2.0615528128088303,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1700,
+        "inference_seconds": 0.00759769999422133,
+        "neural_strain_mae": 0.00019942795915994793,
+        "neural_epe_pixels": 2.0631446838378906,
+        "phase_epe_pixels": 0.05299000442028046,
+        "zero_epe_pixels": 2.0615525245666504
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.0,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.008907699986593798,
+        "neural_strain_mae": 0.00024032904184423387,
+        "neural_epe_pixels": 4.130998611450195,
+        "phase_epe_pixels": 0.8995178937911987,
+        "zero_epe_pixels": 4.123105049133301
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.1,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.006530799990287051,
+        "neural_strain_mae": 0.00024269873392768204,
+        "neural_epe_pixels": 4.131002902984619,
+        "phase_epe_pixels": 0.11250055581331253,
+        "zero_epe_pixels": 4.123105049133301
+      },
+      {
+        "axial_shift_pixels": 4.0,
+        "lateral_shift_pixels": 1.0,
+        "true_magnitude_pixels": 4.123105625617661,
+        "noise_rms": 0.3,
+        "shape": [
+          64,
+          48
+        ],
+        "evaluation_pixels": 1380,
+        "inference_seconds": 0.006227700010640547,
+        "neural_strain_mae": 0.0002444552374072373,
+        "neural_epe_pixels": 4.131021499633789,
+        "phase_epe_pixels": 0.08498556166887283,
+        "zero_epe_pixels": 4.123105049133301
+      }
+    ],
+    "origin": "analytic_continuous_texture_translation",
+    "claim_boundary": "Software/reference-fixture accuracy only; not validated acoustic or clinical performance.",
+    "truth": "pre=T(z,x); post=T(z-uz,x-ux); reference-to-moving flow=[ux,uz]; true strain=0.",
+    "evaluation": "Fixed truth-defined interior margin; identical support for all three estimators."
+  }
+}

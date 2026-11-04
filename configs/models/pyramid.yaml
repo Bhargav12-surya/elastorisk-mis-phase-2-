@@ -1,0 +1,6 @@
+attention: false
+confidence: false
+inputs: rf
+name: pyramid
+radius: 1
+width: 8

@@ -1,0 +1,6 @@
+components:
+- 2
+- 3
+- 4
+features: artifacts/train_features.npz
+output: artifacts/phenotypes.pkl

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "torch": "2.15.0+cu132",
+  "cuda_build": "13.2",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU",
+  "script_sha256": "a2ec27bd22d4e90a881a898d6b757d3615af3a5d6d23d40b956d0acbdd7ed73d"
+}

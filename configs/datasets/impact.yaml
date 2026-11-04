@@ -1,0 +1,9 @@
+axes: not_verified
+dataset_id: impact-acquired
+mapping:
+  post: null
+  pre: null
+output: data/processed/impact-acquired
+records: []
+root: data/raw/impact-acquired
+spacing_mm: null

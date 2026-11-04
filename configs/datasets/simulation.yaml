@@ -1,0 +1,12 @@
+axes: not_verified
+dataset_id: impact-simulation
+displacement_convention: not_verified
+displacement_units: not_verified
+mapping:
+  post: null
+  pre: null
+  ux: null
+  uz: null
+output: data/processed/impact-simulation
+records: []
+root: data/raw/impact-simulation
